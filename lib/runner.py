@@ -1,5 +1,6 @@
-from heart import Heart
+from heart_movie import HeartMovie
+from animator import Animator
 
-h = Heart()
-h.setup()
-h.animate()
+hm = HeartMovie()
+a  = Animator(hm)
+a.animate

@@ -46,9 +46,6 @@ class Heart:
                 time.sleep(0.005)
             time.sleep(0.8)
 
-    def clear(self):
+    def off(self):
         """docstring for clear"""
-        for y in range(16):
-           for x in range(16):
-                unicorn.set_pixel(x, y, 0, 0, 0)
-        unicorn.show()
+        unicorn.off()
