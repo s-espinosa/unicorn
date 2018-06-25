@@ -1,6 +1,6 @@
-from heart_movie import HeartMovie
-from animator import Animator
+from letter import Letter
+from projector import Projector
 
-hm = HeartMovie()
-a  = Animator(hm)
-a.animate
+l = Letter()
+p = Projector(l)
+p.animate()

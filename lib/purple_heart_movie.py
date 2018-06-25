@@ -29,9 +29,11 @@ class HeartMovie:
 
             if item == 0:
                 r = 0.0
+                b = 0.0
             else:
                 r = 255.0 / ((self.frame % 20) + 1)
-            pixels.append({"x": x, "y": y, "r": r, "g": 0, "b": 0})
+                b = 255.0 / ((self.frame % 20) + 1)
+            pixels.append({"x": x, "y": y, "r": r, "g": 0, "b": b})
 
         self.frame = self.frame + 1
         return pixels
