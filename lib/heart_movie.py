@@ -1,8 +1,9 @@
 class HeartMovie:
     def __init__(self):
-        self.refresh_rate = 0.005
+        self.refresh_rate = 0.01
         self.finished = False
-        self.rotation = 90
+        # self.rotation = 90
+        self.rotation = 0
         self.frame    = 0
         self.heart    = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
                          0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,

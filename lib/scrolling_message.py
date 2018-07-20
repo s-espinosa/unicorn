@@ -1,12 +1,20 @@
 from letters import letters
 
-class ScrollingLetter:
-    def __init__(self):
+class ScrollingMessage:
+    def __init__(self, message):
         self.refresh_rate = 0.025
         self.finished = False
         self.rotation = 0
         self.frame    = 0
-        self.heart    = letters["A"]
+        self.message  = self.encode(message)
+
+    def encode(self, message):
+        """docstring for encode"""
+        upcased    = message.upper()
+        characters = list(upcased)
+        encoded    = list(map(lambda letter: letters[letter], characters))
+        split      = self.split(encoded)
+        print(encoded)
 
     def step(self):
         pixels = []

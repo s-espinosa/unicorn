@@ -6,7 +6,7 @@ class Letter:
         self.finished = False
         self.rotation = 0
         self.frame    = 0
-        self.heart    = letters["<"]
+        self.heart    = letters["A"]
 
     def step(self):
         pixels = []
